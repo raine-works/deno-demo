@@ -1,0 +1,3 @@
+{
+	"extends": "@nats/tsconfig/base.json"
+}

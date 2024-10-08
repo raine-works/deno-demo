@@ -1,0 +1,7 @@
+{
+	"name": "@nats/tsconfig",
+	"private": true,
+	"files": [
+		"base.json"
+	]
+}
