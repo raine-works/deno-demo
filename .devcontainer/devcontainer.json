@@ -1,23 +1,23 @@
 {
-  "name": "deno-demo",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers-community/features/deno:1": { "version": "2.0.0" },
-    "ghcr.io/devcontainers/features/github-cli:1": {}
-  },
-  "mounts": [
-    "source=${env:HOME}${env:USERPROFILE}/.config/gh,target=/home/vscode/.config/gh,type=bind"
-  ],
-  "containerEnv": {
-    "NODE_ENV": "development",
-    "TZ": "UTC"
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "mhutchie.git-graph",
-        "waderyan.gitblame"
-      ]
-    }
-  }
+	"name": "deno-demo",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/devcontainers-community/features/deno:1": { "version": "2.0.0" },
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"mounts": [
+		"source=${env:HOME}${env:USERPROFILE}/.config/gh,target=/home/vscode/.config/gh,type=bind"
+	],
+	"containerEnv": {
+		"NODE_ENV": "development",
+		"TZ": "UTC"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mhutchie.git-graph",
+				"waderyan.gitblame"
+			]
+		}
+	}
 }
