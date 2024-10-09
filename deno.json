@@ -1,0 +1,16 @@
+{
+    "tasks": {
+        "build": "deno compile --allow-net --allow-env --env-file=.env --output=.build/app src/index.ts",
+        "dev": "deno run --allow-net --allow-env --watch-hmr=src --env=.env src/index.ts",
+        "start": ".build/app"
+    },
+    "fmt": {
+        "options": {
+            "useTabs": true,
+            "lineWidth": 120,
+            "indentWidth": 2,
+            "singleQuote": true,
+            "proseWrap": "always"
+        }
+    }
+}
