@@ -1,5 +1,4 @@
 {
-    "name": "@raine-works/deno-demo",
     "tasks": {
         "build": "deno compile --allow-net --allow-env --env-file=.env --output=.build/app src/index.ts",
         "dev": "deno run --allow-net --allow-env --watch-hmr=src --env=.env src/index.ts",
