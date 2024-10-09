@@ -1,5 +1,5 @@
 {
-	"name": "@nats/tsconfig",
+	"name": "@jetstream-demo/tsconfig",
 	"private": true,
 	"files": [
 		"base.json"

@@ -1,0 +1,15 @@
+{
+	"name": "@jetstream-demo/two",
+	"private": true,
+	"dependencies": {
+		"@nats-io/jetstream": "3.0.0-10",
+		"nats": "2.28.2"
+	},
+	"devDependencies": {
+		"@jetstream-demo/tsconfig": "workspace:*",
+		"bun-types": "1.1.30"
+	},
+	"peerDependencies": {
+		"typescript": "5.6.3"
+	}
+}
