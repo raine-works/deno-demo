@@ -2,7 +2,10 @@
 	"name": "deno-demo",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
-		"ghcr.io/devcontainers-community/features/deno:1": { "version": "2.0.0" },
+		"ghcr.io/devcontainers-community/features/deno:1": {
+			"version": "2.0.0"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
 	"mounts": [

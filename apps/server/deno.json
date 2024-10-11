@@ -1,0 +1,13 @@
+{
+    "name": "@deno-demo/server",
+    "version": "0.0.0",
+    "exports": "./src/index.tsx",
+    "tasks": {
+        "build": "deno compile --allow-net --allow-env --env-file=.env --output=.build/app src/index.tsx",
+        "dev": "deno run --allow-net --allow-env --watch-hmr=src --env=.env src/index.tsx",
+        "start": ".build/app"
+    },
+    "imports": {
+        "hono/jsx": "jsr:@hono/hono/jsx"
+    }
+}

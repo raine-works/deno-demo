@@ -1,9 +1,7 @@
 {
-	"tasks": {
-		"build": "deno compile --allow-net --allow-env --env-file=.env --output=.build/app src/index.ts",
-		"dev": "deno run --allow-net --allow-env --watch-hmr=src --env=.env src/index.ts",
-		"start": ".build/app"
-	},
+	"workspace": [
+		"./apps/server"
+	],
 	"fmt": {
 		"useTabs": true,
 		"lineWidth": 120,
@@ -11,5 +9,9 @@
 		"singleQuote": true,
 		"semiColons": false,
 		"proseWrap": "always"
+	},
+	"compilerOptions": {
+		"jsx": "precompile",
+		"jsxImportSource": "hono/jsx"
 	}
 }
