@@ -13,7 +13,7 @@
 		"source=${env:HOME}${env:USERPROFILE}/.config/gh,target=/home/vscode/.config/gh,type=bind"
 	],
 	"containerEnv": {
-		"APP_ENV": "development",
+		"NODE_ENV": "development",
 		"TZ": "UTC"
 	},
 	"customizations": {
