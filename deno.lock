@@ -9,18 +9,18 @@
     "jsr:@std/expect@1.0.6": "1.0.6",
     "jsr:@std/internal@^1.0.4": "1.0.4",
     "jsr:@std/uuid@1.0.4": "1.0.4",
-    "npm:@deno/vite-plugin@1": "1.0.0_vite@5.4.11",
+    "npm:@deno/vite-plugin@1.0.0": "1.0.0_vite@5.4.9__@types+node@22.5.4_@types+node@22.5.4",
     "npm:@types/k6@*": "0.54.1",
     "npm:@types/node@*": "22.5.4",
-    "npm:@types/react-dom@^18.3.1": "18.3.1",
-    "npm:@types/react@^18.3.11": "18.3.12",
-    "npm:@vitejs/plugin-react@^4.3.3": "4.3.3_vite@5.4.11_@babel+core@7.26.0",
+    "npm:@types/react-dom@18.3.1": "18.3.1",
+    "npm:@types/react@18.3.11": "18.3.11",
+    "npm:@vitejs/plugin-react@4.3.3": "4.3.3_vite@5.4.9__@types+node@22.5.4_@babel+core@7.26.0_@types+node@22.5.4",
     "npm:create-vite-extra@latest": "2.4.1",
     "npm:create-vite@latest": "5.5.5",
-    "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
-    "npm:react@^18.3.1": "18.3.1",
-    "npm:vite@*": "5.4.11",
-    "npm:vite@^5.4.9": "5.4.11"
+    "npm:react-dom@18.3.1": "18.3.1_react@18.3.1",
+    "npm:react@18.3.1": "18.3.1",
+    "npm:vite@*": "5.4.9_@types+node@22.5.4",
+    "npm:vite@5.4.9": "5.4.9_@types+node@22.5.4"
   },
   "jsr": {
     "@hono/hono@4.6.11": {
@@ -197,7 +197,7 @@
         "@babel/helper-validator-identifier"
       ]
     },
-    "@deno/vite-plugin@1.0.0_vite@5.4.11": {
+    "@deno/vite-plugin@1.0.0_vite@5.4.9__@types+node@22.5.4_@types+node@22.5.4": {
       "integrity": "sha512-Q9UeWqs3s7B5lqzu1Z5QrzYAzqTj3+F9YW17tWobGRbT2G40ihwis6zK/+QgMgcG4fm3IqdIfXmpQYhkZpdMfw==",
       "dependencies": [
         "vite"
@@ -400,14 +400,14 @@
         "@types/react"
       ]
     },
-    "@types/react@18.3.12": {
-      "integrity": "sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==",
+    "@types/react@18.3.11": {
+      "integrity": "sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==",
       "dependencies": [
         "@types/prop-types",
         "csstype"
       ]
     },
-    "@vitejs/plugin-react@4.3.3_vite@5.4.11_@babel+core@7.26.0": {
+    "@vitejs/plugin-react@4.3.3_vite@5.4.9__@types+node@22.5.4_@babel+core@7.26.0_@types+node@22.5.4": {
       "integrity": "sha512-NooDe9GpHGqNns1i8XDERg0Vsg5SSYRhRxxyTGogUdkdNt47jal+fbuYi+Yfq6pzRCKXyoPcWisfxE6RIM3GKA==",
       "dependencies": [
         "@babel/core",
@@ -618,9 +618,10 @@
         "picocolors"
       ]
     },
-    "vite@5.4.11": {
-      "integrity": "sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==",
+    "vite@5.4.9_@types+node@22.5.4": {
+      "integrity": "sha512-20OVpJHh0PAM0oSOELa5GaZNWeDjcAvQjGXy2Uyr+Tp+/D2/Hdz6NLgpJLsarPTA2QJ6v8mX2P1ZfbsSKvdMkg==",
       "dependencies": [
+        "@types/node",
         "esbuild",
         "fsevents",
         "postcss",
@@ -643,13 +644,13 @@
       "web": {
         "dependencies": [
           "jsr:@hono/hono@4.6.11",
-          "npm:@deno/vite-plugin@1",
-          "npm:@types/react-dom@^18.3.1",
-          "npm:@types/react@^18.3.11",
-          "npm:@vitejs/plugin-react@^4.3.3",
-          "npm:react-dom@^18.3.1",
-          "npm:react@^18.3.1",
-          "npm:vite@^5.4.9"
+          "npm:@deno/vite-plugin@1.0.0",
+          "npm:@types/react-dom@18.3.1",
+          "npm:@types/react@18.3.11",
+          "npm:@vitejs/plugin-react@4.3.3",
+          "npm:react-dom@18.3.1",
+          "npm:react@18.3.1",
+          "npm:vite@5.4.9"
         ]
       }
     }
