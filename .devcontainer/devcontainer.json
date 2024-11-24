@@ -3,7 +3,7 @@
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/devcontainers-community/features/deno:1": {
-			"version": "2.0.3"
+			"version": "2.1.1"
 		},
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {},
