@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import deno from '@deno/vite-plugin'
-import react from '@vitejs/plugin-react'
-import path from 'node:path'
+import { defineConfig } from 'vite';
+import deno from '@deno/vite-plugin';
+import react from '@vitejs/plugin-react';
+import path from 'node:path';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -21,4 +21,4 @@ export default defineConfig({
 			},
 		},
 	},
-})
+});

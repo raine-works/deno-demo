@@ -1,4 +1,4 @@
-import { hc } from 'hono/client'
-import type { App } from '@deno/api'
+import { hc } from 'hono/client';
+import type { App } from '@deno/api';
 
-export const apiClient = hc<App>('/')
+export const apiClient = hc<App>('/');

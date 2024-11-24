@@ -1,5 +1,5 @@
-import { app } from './app.ts'
+import { app } from './app.ts';
 
-Deno.serve({ hostname: '127.0.0.1', port: 8000 }, app.fetch)
+Deno.serve({ hostname: '127.0.0.1', port: 8000 }, app.fetch);
 
-export type App = typeof app
+export type App = typeof app;
