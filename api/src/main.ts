@@ -1,4 +1,4 @@
-import { app } from './app.ts';
+import { app } from '@/app.ts';
 
 Deno.serve({ port: Number(Deno.env.get('PORT')) }, app.fetch);
 

@@ -1,4 +1,4 @@
-import { app } from './app.ts';
+import { app } from '@/app.ts';
 import { expect } from 'expect';
 
 Deno.test('test GET endpoint', async () => {

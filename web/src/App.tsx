@@ -1,7 +1,7 @@
 import './App.css';
 // @deno-types="@types/react"
 import { useState } from 'react';
-import { apiClient } from './lib/api.ts';
+import { apiClient } from '@/lib/api.ts';
 
 function App() {
 	const [msg, setMsg] = useState('');

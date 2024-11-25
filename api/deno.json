@@ -3,12 +3,15 @@
 	"version": "1.0.0",
 	"exports": "./src/main.ts",
 	"tasks": {
-		"build": "deno compile -REN -o .build/server src/main.ts && bash scripts/build.sh",
-		"dev": "deno run -REN --env-file --watch src/main.ts"
+		"build": "deno compile -RENS -o .build/server src/main.ts && bash scripts/build.sh",
+		"dev": "deno run -RENS --env-file --watch src/main.ts"
 	},
 	"imports": {
+		"@/": "./src/",
 		"hono": "jsr:@hono/hono@4.6.11",
 		"expect": "jsr:@std/expect@1.0.6",
-		"uuid": "jsr:@std/uuid@1.0.4"
+		"uuid": "jsr:@std/uuid@1.0.4",
+		"pino": "npm:pino@9.5.0",
+		"pino-pretty": "npm:pino-pretty@13.0.0"
 	}
 }
