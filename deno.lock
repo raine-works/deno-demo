@@ -892,16 +892,7 @@
   },
   "workspace": {
     "members": {
-      "api": {
-        "dependencies": [
-          "jsr:@hono/hono@4.6.11",
-          "jsr:@std/expect@1.0.6",
-          "jsr:@std/uuid@1.0.4",
-          "npm:pino-pretty@13.0.0",
-          "npm:pino@9.5.0"
-        ]
-      },
-      "web": {
+      "portal": {
         "dependencies": [
           "jsr:@hono/hono@4.6.11",
           "npm:@deno/vite-plugin@1.0.0",
@@ -911,6 +902,15 @@
           "npm:react-dom@18.3.1",
           "npm:react@18.3.1",
           "npm:vite@5.4.9"
+        ]
+      },
+      "server": {
+        "dependencies": [
+          "jsr:@hono/hono@4.6.11",
+          "jsr:@std/expect@1.0.6",
+          "jsr:@std/uuid@1.0.4",
+          "npm:pino-pretty@13.0.0",
+          "npm:pino@9.5.0"
         ]
       }
     }

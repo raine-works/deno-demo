@@ -12,7 +12,7 @@ function App() {
 				<button
 					onClick={async () => {
 						socket.send('Hello World');
-						const res = await client.api.test.$get();
+						const res = await client.api.auth.$get();
 						const json = await res.json();
 						setMsg(json.id);
 					}}

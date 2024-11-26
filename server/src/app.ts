@@ -1,14 +1,14 @@
 import { Hono } from 'hono';
 import { compress } from 'hono/compress';
-import { serveStatic } from 'hono/deno';
 import { honoLogger } from '@/middleware/logger.ts';
-import useWs from '@/routes/ws.ts';
-import useTest from '@/routes/test.ts';
+import { usePortal } from '@/routes/static.ts';
+import { useWs } from '@/routes/ws.ts';
+import { useAuth } from '@/routes/auth.ts';
 
 export const app = new Hono()
 	.use(compress({ encoding: 'gzip' }))
 	.use(honoLogger)
-	.use('/*', serveStatic({ root: '/mnt/static/web/dist' }))
+	.use(usePortal)
 	.basePath('/api')
 	.route('/ws', useWs)
-	.route('/test', useTest);
+	.route('/auth', useAuth);

@@ -1,12 +1,12 @@
 {
 	"tasks": {
-		"build": "deno run -RE --allow-run npm:concurrently \"deno task -f api build\" \"deno task -f web build\"",
-		"dev": "deno run -RE --allow-run npm:concurrently \"deno task -f api dev\" \"deno task -f web dev\"",
+		"build": "deno run -RE --allow-run npm:concurrently \"deno task -f server build\" \"deno task -f portal build\"",
+		"dev": "deno run -RE --allow-run npm:concurrently \"deno task -f server dev\" \"deno task -f portal dev\"",
 		"hook": "deno run -RW --allow-run https://deno.land/x/deno_hooks@0.1.1/mod.ts"
 	},
 	"workspace": [
-		"api",
-		"web"
+		"portal",
+		"server"
 	],
 	"fmt": {
 		"useTabs": true,

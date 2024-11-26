@@ -1,5 +1,5 @@
 {
-	"name": "@deno/web",
+	"name": "@deno/portal",
 	"version": "1.0.0",
 	"exports": "./src/main.tsx",
 	"tasks": {
