@@ -8,10 +8,13 @@
 	},
 	"imports": {
 		"@/": "./src/",
-		"hono": "jsr:@hono/hono@4.6.11",
+		"hono": "npm:hono@4.6.12",
+		"hono-openapi": "npm:hono-openapi@0.1.5",
 		"expect": "jsr:@std/expect@1.0.6",
 		"uuid": "jsr:@std/uuid@1.0.4",
 		"pino": "npm:pino@9.5.0",
-		"pino-pretty": "npm:pino-pretty@13.0.0"
+		"pino-pretty": "npm:pino-pretty@13.0.0",
+		"zod": "npm:zod@3.23.8",
+		"zod-openapi": "npm:zod-openapi@4.1.0"
 	}
 }

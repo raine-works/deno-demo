@@ -2,7 +2,8 @@ import { createMiddleware } from 'hono/factory';
 import { logger } from '@/utils/logger.ts';
 
 export const honoLogger = createMiddleware(async (c, next) => {
-	logger.info({ user: 'raine' }, `<-- ${c.req.method}: ${c.req.path}`);
+	c.set('logger', logger);
+	logger.info(`<-- ${c.req.method}: ${c.req.path}`);
 	await next();
 	logger.info(`--> ${c.req.method}: ${c.req.path} ${c.res.status}`);
 });
