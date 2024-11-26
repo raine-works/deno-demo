@@ -12,3 +12,5 @@ docker build \
     --build-arg=STACK=${STACK} \
     --build-arg=VERSION=${VERSION} \
     .
+
+docker image prune -f

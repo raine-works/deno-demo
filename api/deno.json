@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"exports": "./src/main.ts",
 	"tasks": {
-		"build": "deno compile -RENS -o .build/server src/main.ts && bash scripts/build.sh",
-		"dev": "deno run -RENS --env-file --watch src/main.ts"
+		"build": "deno compile -RENS --node-modules-dir -o .build/server src/main.ts && bash scripts/build.sh",
+		"dev": "deno run -RENS --env-file --node-modules-dir --watch src/main.ts"
 	},
 	"imports": {
 		"@/": "./src/",
