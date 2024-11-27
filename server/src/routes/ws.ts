@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import { upgradeWebSocket } from 'hono/deno';
 
-export const useWs = new Hono()
+export const wsRoute = new Hono()
 	.get(
 		'/',
 		upgradeWebSocket((c) => {

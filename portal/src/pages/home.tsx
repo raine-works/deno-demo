@@ -1,14 +1,15 @@
-import '@/App.css';
 // @deno-types="@types/react"
 import { useState } from 'react';
 import { client, socket } from '@/lib/api.ts';
+import { createLazyRoute, Link } from '@tanstack/react-router';
 
-function App() {
+const Home = () => {
 	const [msg, setMsg] = useState('');
 
 	return (
 		<>
 			<div>
+				<Link href='/docs'>Docs</Link>
 				<button
 					onClick={async () => {
 						socket.send('Hello World');
@@ -23,6 +24,8 @@ function App() {
 			</div>
 		</>
 	);
-}
+};
 
-export default App;
+export const Route = createLazyRoute('/')({
+	component: Home,
+});
